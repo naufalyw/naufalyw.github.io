@@ -1,0 +1,102 @@
+.navbar {
+    background-color: #202020;
+    height: 68px;
+}
+.navbar ul {
+    list-style-type: none;
+}
+.navbar li {
+    float: left;
+    font-family: "SF Pro Display", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    height: 30px;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar li a:hover {
+    background: #252525;
+}
+
+.navbar li a.logo {
+    position: absolute;
+    padding: 14px 16px;
+    top: 20px;
+    left: 150px;
+}
+
+.navbar li a.logo img {
+    width: auto;
+    height: auto;
+}
+
+.navbar li a.navigate {
+    position: relative;
+    top: 10px;
+    left: 920px;
+}
+
+.header {
+    background-color: #101010;
+    height: 517px;
+}
+.header img {
+    height: 375px;
+    width: auto;
+    position: relative;
+    top: 33px;
+    left: 269px;
+}
+.header h2{
+    font: normal normal normal 24px/normal "Product Sans", sans-serif;
+    color: white;
+    position: absolute;
+    top: 201.37px;
+    left: 631px;
+
+}
+.header h1{
+    font: normal normal bold 48px/normal "Product Sans", sans-serif;
+    color: white;
+    position: absolute;
+    top: 229.18px;
+    left: 631px;
+}
+.header p {
+    font: normal normal normal 16px/normal "SF Pro Display", sans-serif;
+    color: white;
+    width: 437px;
+    position: absolute;
+    top: 317px;
+    left: 631px;
+}
+.btn-blue {
+    background-color: #7ec1ff;
+    position: absolute;
+    left: 631px;
+    top: 393px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    height: 26px;
+    width: 152px;
+    border: none;
+    border-radius: 9px;
+    color: black;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    font-family: "SF Pro Display", sans-serif;
+}
+.btn-blue:hover {
+    background-color: #ffffff;
+    color: #101010;
+    transition-duration: 0.6s;
+    box-shadow: 0 0px 25px 0 rgba(255,255,255,0.2), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
