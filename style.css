@@ -1,6 +1,139 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* section custom */
 .navbar {
     display: block;
     background-color: #101010;
+    height: 80px;
 }
 
 .navbar li {
@@ -8,11 +141,10 @@
     list-style: none;
 }
 
-.container_nav {
+.container {
     display: block;
-    height: 70px;
-    margin-left: 150px;
-    margin-right: 150px;
+    width: 1140px;
+    margin: auto;
 }
 
 .navlogo {
@@ -72,60 +204,59 @@
 }
 
 .header {
+    display: block;
+    box-sizing: border-box;
+    padding-top: 25px;
     background-color: #101010;
     height: 517px;
 }
 
 .header img {
-    height: 375px;
-    width: auto;
-    position: relative;
-    top: 33px;
-    left: 269px;
+    display: inline-block;
+    width: 252;
+    height: 375;
+    margin-left: 119px;
 }
 
-.header h2 {
-    font: normal normal normal 24px/normal "SF Pro Display", sans-serif;
+.hero {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 118px;
+    margin-left: 110px;
+}
+
+.hero h2 {
+    font: normal normal normal 24px/normal "Plus Jakarta Sans", sans-serif;
     color: white;
-    position: absolute;
-    top: 201.37px;
-    left: 631px;
 
 }
 
-.header h1 {
+.hero h1 {
+    margin-top: 10px;
     font: normal normal bold 48px/normal "Product Sans", sans-serif;
     color: white;
-    position: absolute;
-    top: 229.18px;
-    left: 631px;
 }
 
-.header p {
+.hero p {
+    margin-top: 14px;
     font: normal normal normal 16px/normal "SF Pro Display", sans-serif;
     color: white;
-    width: 437px;
-    position: absolute;
-    top: 317px;
-    left: 631px;
+    width: 460px;
 }
 
 .btn-blue {
+    margin-top: 38px;
+    display: block;
     background-color: #7ec1ff;
-    position: absolute;
-    left: 631px;
-    top: 393px;
-    padding-top: 13.5px;
-    padding-bottom: 13px;
-    height: 26px;
+    padding: 13px 33px;
     width: 152px;
-    border: none;
-    border-radius: 9px;
+    height: 49px;
+    box-sizing: border-box;
+    border-radius: 50px;
     color: black;
     font-weight: 500;
     text-align: center;
     text-decoration: none;
-    display: block;
     font-size: 20px;
     font-family: "SF Pro Display", sans-serif;
 }
@@ -134,5 +265,51 @@
     background-color: #ffffff;
     color: #101010;
     transition-duration: 0.6s;
-    box-shadow: 0 0px 25px 0 rgba(255, 255, 255, 0.2), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-blue:active {
+    box-shadow: 0 0 0 0 rgb(182, 235, 226);
+    transform: scale(1);
+    animation: pulse 1s;
+}
+
+@keyframes pulse {
+    0%{
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(1, 247, 255, 0.7);
+    }
+
+    50%{
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(12, 255, 255, 0);
+    }
+
+    70%{
+        box-shadow: 0 0 0 0 rgba(8, 180, 248, 0);
+    }
+
+    100%{
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(12, 255, 255, 0);
+    }
+
+}
+
+/* end of custom section */
+/* clearfix */
+
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
 }
