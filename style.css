@@ -1,50 +1,81 @@
 .navbar {
-    background-color: #202020;
-    height: 68px;
-}
-.navbar ul {
-    list-style-type: none;
-}
-.navbar li {
-    float: left;
-    font-family: "SF Pro Display", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-}
-.navbar li a {
     display: block;
-    color: white;
+    background-color: #101010;
+}
+
+.navbar li {
+    display: inline-block;
+    list-style: none;
+}
+
+.container_nav {
+    display: block;
+    height: 70px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.navlogo {
+    padding-top: 22px;
+    display: inline-block;
+}
+
+.navlogo a {
+    width: 100px;
+    height: 40px;
+    padding-top: 20px;
+    padding-left: 20px;
+    transition: 500ms;
+}
+
+.navright {
+    float: right;
+    margin-top: 0;
+    padding-top: 20px;
+    padding-left: 0px;
+}
+
+.navright li {
+    display: inline-block;
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 81px;
+    height: 32px;
     text-align: center;
-    height: 30px;
-    padding: 14px 16px;
+    box-sizing: border-box;
+    padding-top: 6.5px;
+
+}
+
+.navigate {
+    display: inline-block;
+    width: 82px;
+    height: 40px;
+    font-family: "SF Pro Display", sans-serif;
+    position: relative;
+    top: -5px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
     text-decoration: none;
 }
-.navbar li a:hover {
-    background: #252525;
+
+.navright li a {
+    border-radius: 50px;
+    transition: 0.5s;
 }
 
-.navbar li a.logo {
-    position: absolute;
-    padding: 14px 16px;
-    top: 20px;
-    left: 150px;
-}
-
-.navbar li a.logo img {
-    width: auto;
-    height: auto;
-}
-
-.navbar li a.navigate {
-    position: relative;
-    top: 10px;
-    left: 920px;
+.navright li a:hover {
+    background-color: #202020;
 }
 
 .header {
     background-color: #101010;
     height: 517px;
 }
+
 .header img {
     height: 375px;
     width: auto;
@@ -52,21 +83,24 @@
     top: 33px;
     left: 269px;
 }
-.header h2{
-    font: normal normal normal 24px/normal "Product Sans", sans-serif;
+
+.header h2 {
+    font: normal normal normal 24px/normal "SF Pro Display", sans-serif;
     color: white;
     position: absolute;
     top: 201.37px;
     left: 631px;
 
 }
-.header h1{
+
+.header h1 {
     font: normal normal bold 48px/normal "Product Sans", sans-serif;
     color: white;
     position: absolute;
     top: 229.18px;
     left: 631px;
 }
+
 .header p {
     font: normal normal normal 16px/normal "SF Pro Display", sans-serif;
     color: white;
@@ -75,6 +109,7 @@
     top: 317px;
     left: 631px;
 }
+
 .btn-blue {
     background-color: #7ec1ff;
     position: absolute;
@@ -94,9 +129,10 @@
     font-size: 20px;
     font-family: "SF Pro Display", sans-serif;
 }
+
 .btn-blue:hover {
     background-color: #ffffff;
     color: #101010;
     transition-duration: 0.6s;
-    box-shadow: 0 0px 25px 0 rgba(255,255,255,0.2), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 0px 25px 0 rgba(255, 255, 255, 0.2), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
