@@ -128,152 +128,110 @@ table {
     border-spacing: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 /* section custom */
-.navbar {
-    position: sticky;
-    top: 0px;
-    display: block;
-    background-color: #1b1b1b;
-    height: 60px;
-}
 
-.navbar li {
-    display: inline-block;
-    list-style: none;
+
+.nav {
+    background-color: #101010;
+    padding: 10px 0px;
+    height: 38px;
+    position: sticky;
+    top: 0;
 }
 
 .container {
     display: block;
-    width: 1140px;
+    justify-content: center;
     margin: auto;
+    width: 80%;
 }
 
-.navlogo {
-    padding-top: 12px;
-    display: inline-block;
+.placeholder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
 }
 
-.navlogo a {
-    height: 60 px;
-    padding-top: 20px;
-    padding-left: 20px;
-    transition: 500ms;
+.logo {
+    align-items: center;
+    transition: 0.4s;
 }
 
-.navright {
-    float: right;
-    margin-top: 0;
-    box-sizing: border-box;
-    padding-top: 10px;
-    padding-left: 0px;
+.logo:active {
+    scale: 90%;
 }
 
-.navright li {
-    display: inline-block;
-    margin-left: 2px;
-    width: 95px;
-    height: 40px;
-    text-align: center;
-    box-sizing: border-box;
-
+.hambar {
+    display: flex;
+    width: 20%;
+    justify-content: end;
 }
 
-.navigate {
-    display: inline-block;
-    width: 95px;
-    height: 40px;
-    font-family: "SF Pro Display", sans-serif;
+.hambar svg {
+    display: flex;
+    flex-shrink: 0;
+    fill: white;
+    padding: 2px;
+    height: 1.8rem;
+    width: 2rem;
+    border: 0.2px solid #555;
+    transition: 0.4s;
+}
+
+.hambar svg:hover {
+    background-color: #303030;
+}
+
+.hambar svg:active {
+    scale: 90%;
+}
+
+.navbar {
+    /* background-color: aqua; */
+    display: none;
+    width: 50%;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    display: flex;
+}
+
+.navbar ul li a {
+    display: flex;
+    text-decoration: none;
     color: white;
-    line-height: 40px;
-    font-size: 16px;
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
-    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 0.8rem 1.3rem;
+    margin-left: 0.3rem;
+    transition: 0.4s;
+    border-radius: 1.3rem;
 }
 
-.navigate_regular {
-    font-weight: 300;
-}
-
-.navright li a {
-    border-radius: 50px;
-    transition: 0.5s;
-
-}
-
-.navright li a:hover {
-    background-color: #2B2B2B;
-}
-
-.header {
-    padding-top: 15px;
-    display: block;
-    box-sizing: border-box;
-    background-color: #101010;
-    height: 500px;
-}
-
-.header img {
-    display: inline-block;
-    height: 300;
-    margin-left: 119px;
-    margin-top: 30px;
-}
-
-.hero {
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 118px;
-    margin-left: 110px;
-}
-
-.hero h2 {
-    font: normal normal normal 24px/normal "Plus Jakarta Sans", sans-serif;
-    color: white;
-
-}
-
-.hero h1 {
-    margin-top: 10px;
-    font: normal normal bold 48px/normal "Product Sans", sans-serif;
-    color: white;
-}
-
-.hero p {
-    margin-top: 14px;
-    font: normal normal normal 16px/normal "SF Pro Display", sans-serif;
-    color: white;
-    width: 460px;
-}
-
-.btn-blue {
-    margin-top: 38px;
-    display: block;
-    background-color: #7ec1ff;
-    padding: 13px 33px;
-    width: 152px;
-    height: 49px;
-    box-sizing: border-box;
-    border-radius: 50px;
-    color: black;
-    font-weight: 500;
-    text-align: center;
-    text-decoration: none;
-    font-size: 20px;
-    font-family: "SF Pro Display", sans-serif;
-}
-
-.btn-blue:hover {
-    background-color: #ffffff;
+.navbar a:hover {
+    background-color: #fff;
     color: #101010;
-    transition-duration: 0.6s;
+    font-size: 0.95rem
 }
 
-.btn-blue:active {
-    box-shadow: 0 0 0 0 rgb(182, 235, 226);
-    transform: scale(1);
-    animation: pulse 1s;
+.navbar a:active {
+    scale: 90%;
 }
+
+/* custom section ending */
 
 @keyframes pulse {
     0% {
@@ -297,21 +255,103 @@ table {
 
 }
 
-/* end of custom section */
-/* clearfix */
+/* media queries */
+@media only screen and (max-width: 768px) {
+    .hambar {
+        display: flex;
+    }
 
-.cf:before,
-.cf:after {
-    content: " ";
-    /* 1 */
-    display: table;
-    /* 2 */
+    .flexmenu {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu {
+        display: flex;
+        position: absolute;
+        top: 58px;
+        width: 100%;
+        height: 0px;
+        background-color: #202020;
+        justify-content: space-evenly;
+        opacity: 0;
+        transition: 0.5s;
+
+    }
+
+    .menu.active {
+        height: 100vh;
+        opacity: 0.96;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 40px;
+        overflow: hidden;
+    }
+
+    .menu ul li {
+        justify-content: center;
+    }
+
+    .menu ul li a {
+        display: flex;
+        text-decoration: none;
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        font-size: 0.5rem;
+        padding: 2rem 8rem;
+        border-radius: 5rem;
+        transition: 0.7s;
+    }
+
+    .menu ul li a:hover {
+        background-color: #fff;
+        color: #101010;
+        scale: 105%;
+    }
+
+    .menu.active ul li a {
+        font-size: 1.5rem;
+    }
+
 }
 
-.cf:after {
-    clear: both;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .hambar {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+    }
 }
 
-.cf {
-    *zoom: 1;
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .navbar {
+        width: 35%;
+    }
 }
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .navbar {
+        width: 30%;
+    }
+
+    .navbar a {
+        margin-left: 0.3rem;
+    }
+}
+
+/* media queries end */
