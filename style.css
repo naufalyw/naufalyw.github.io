@@ -261,16 +261,16 @@ p {
     display: flex;
     direction: row;
     background: #101010;
-    justify-content: space-evenly;
+    justify-content: center;
     padding-top: 50px;
     padding-bottom: 1.5rem;
-    height: 80vh;
+    height: 70vh;
 }
 
 .container_2 {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     margin: auto;
     width: 60%;
     align-items: center;
@@ -280,7 +280,7 @@ p {
 .hero img {
     max-width: 40vw;
     position: relative;
-    top: -4rem;
+    top: -1rem;
     border-radius: 44rem;
 }
 
@@ -291,7 +291,7 @@ p {
     color: #fff;
     text-decoration: none;
     height: 16.125rem;
-    width: 30rem;
+    width: 95%;
     position: relative;
     top: -2rem;
     /* background-color: aqua; */
@@ -456,7 +456,7 @@ p {
     }
 
     .hero {
-        height: 70vh;
+        height: 75vh;
     }
 
     .hero img {
@@ -491,6 +491,10 @@ p {
         flex-direction: column;
         align-items: flex-start;
         height: 450px;
+    }
+
+    .hero img {
+        top: -4rem;
     }
 
     .container_2 {
