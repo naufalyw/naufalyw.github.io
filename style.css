@@ -502,6 +502,8 @@ p {
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        position: relative;
+        top: 1.5rem;
     }
 
     .title {
@@ -530,7 +532,6 @@ p {
         padding: 1rem 2.2rem;
         align-self: flex-start;
     }
-}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
