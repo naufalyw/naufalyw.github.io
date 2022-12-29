@@ -410,18 +410,17 @@ p {
     filter: drop-shadow(10px 10px 5px #2b2b2b81);
     z-index: 5;
     transition: 0.5s;
+    text-align: center;
+    font-size: 1rem;
+    text-align: left;
+    line-height: 1.5rem;
 }
 
 .about_text:hover {
     scale: 105%;
 }
 
-.about_text p {
-    text-align: center;
-    font-size: 1rem;
-    text-align: left;
-    line-height: 1.5rem;
-}
+.about_text p {}
 
 b {
     font-weight: 500;
@@ -524,7 +523,7 @@ b {
     .menu.active ul li a {
         font-size: 1.1rem;
     }
-    
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -572,9 +571,6 @@ b {
     .about_text {
         max-width: 55vw;
         margin-left: 5%;
-    }
-
-    .about_text p {
         font-size: 1.2rem;
         line-height: 1.8rem;
     }
@@ -653,12 +649,10 @@ b {
         margin-left: 6%;
         max-width: 45vw;
         height: 30vh;
-    }
-
-    .about_text p {
         font-size: 1.2rem;
         line-height: 1.8rem;
     }
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
