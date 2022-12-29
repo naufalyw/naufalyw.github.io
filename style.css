@@ -264,7 +264,7 @@ p {
     justify-content: center;
     padding-top: 50px;
     padding-bottom: 1.5rem;
-    height: 70vh;
+    min-height: 70vh;
     filter: drop-shadow(5px 0px 10px rgba(63, 63, 63, 0.719));
 }
 
@@ -406,7 +406,6 @@ p {
     border-top-right-radius: 0;
     background-color: #fff;
     max-width: 40vw;
-    max-height: 50vh;
     filter: drop-shadow(10px 10px 5px #2b2b2b81);
     z-index: 5;
     transition: 0.5s;
